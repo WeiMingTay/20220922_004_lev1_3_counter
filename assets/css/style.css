@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main section {
+    max-width: 60vw;
+    width: 40vw;
+    margin: 20vh auto;
+    border: 3px solid black;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(45deg, blue, hotpink 60%);
+    text-align: center;
+}
+section h1 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+section p {
+    font-size: 3rem;
+    margin: 1rem auto;
+}
+section div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .3rem;
+    max-width: 130px;
+    margin: .5rem auto;
+}
+div button:hover {
+    scale: 1.1;
+}
