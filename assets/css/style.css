@@ -3,11 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    word-break: break-all;
+}
 main section {
-    max-width: 60vw;
-    width: 40vw;
-    margin: 20vh auto;
-    border: 3px solid black;
+
+box-shadow: 0 0 10px 1px black;
+    
     padding: 1rem 2rem;
     background-image: linear-gradient(45deg, blue, hotpink 60%);
     text-align: center;
@@ -24,9 +32,29 @@ section div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: .3rem;
-    max-width: 130px;
     margin: .5rem auto;
 }
-div button:hover {
-    scale: 1.1;
+div button {
+    background-image: linear-gradient(45deg, hotpink,blue);
+    color: #fff;
+    padding: .1rem 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 0 0 10px -2px blue;
+}
+div button:hover, button:focus {
+    scale: .95;
+}
+
+@media (max-width: 700px) {
+    section {
+        width: calc(100vw - 1rem);
+        height: calc(100% - 1rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        box-shadow: inset 0 0 10px 10px black;
+    }
 }
